@@ -1,0 +1,118 @@
+.companynews{
+    margin: 5vh 20%;
+}
+
+.news{
+    display: flex;
+    align-items: flex-start;
+    margin: 10vh 0;
+    width: 60vw;
+    height: 35vh;
+    /*border: 3px solid black;*/
+    overflow: hidden;
+}
+
+.left{
+    justify-self: left;
+    width: 30vw;
+    border-radius: 10px;
+
+}
+
+.left img{
+    width: 26vw;
+    border-radius: 5px;
+}
+
+.right{
+    justify-self: right;
+    width: 30vw;
+    text-align: center;
+
+}
+
+.right a{
+    width: 30vw;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.right p{
+    width: 30vw;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+
+.news a{
+    text-decoration: none;
+    color: #252525;
+}
+
+.news a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1300px){
+    .news{
+        margin: 5vh 0;
+    }
+
+    .right a{
+        font-size: 1.2rem;
+    }
+
+    .right p{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .news{
+        margin: unset;
+    }
+
+    .right a{
+        font-size: 0.9rem;
+    }
+
+    .right p{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .right a{
+        font-size: 0.7rem;
+    }
+
+    .right p{
+        font-size: 0.45rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .right a{
+        font-size: 0.6rem;
+    }
+
+    .right p{
+        font-size: 0.37rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .right a{
+        font-size: 0.4rem;
+    }
+
+    .right p{
+        font-size: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .right a{
+        font-size: 0.3rem;
+    }
+}

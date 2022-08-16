@@ -1,0 +1,27 @@
+.companybiography{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(30vh, 1fr);
+}
+
+.biosections{
+    grid-column: 3 / span 6;
+    margin-bottom: 10vh;
+}
+
+.biosections h2{
+    margin: 5vh 0;
+}
+
+.biosections h2 span{
+    color: #0c0cb8;
+}
+
+.biosections p{
+    text-align: justify;
+}
+
+.biosections > p::first-letter{
+    margin-left: 3vw;
+}

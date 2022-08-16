@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="services.css">
+    <title>Lee Brothers & Co. Investment</title>
+</head>
+<body>
+    <div class="top">
+        <div class="phone-mail">
+            <div class="phone">            
+                <img src="symbols/baseline_call_white_24dp.png" alt="">
+                <span class="phone-mail-texts">1-255-895-432</span>
+            </div>
+
+            <div class="mail">
+                <img src="symbols/baseline_email_white_24dp.png" alt="">
+                <span class="phone-mail-texts">business@leebrothers.com</span>
+            </div>
+
+        </div>
+        <div class="smicon-contactform">
+            <div class="smicons">
+                <a href="#"><img src="symbols/f_logo_RGB-White_144.png" alt=""></a>
+                <a href="#"><img src="symbols/2021 Twitter logo - white.png" alt=""></a>
+                <a href="#"><img src="symbols/Instagram_Glyph_White.png" alt=""></a>
+            </div>
+
+            <div class="contacform">
+                <div class="contactbutton"><a href="contact.html">Contact Us</a></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="logo-buttons">
+        <div class="logo"><p>Lee Brothers <span>& Co.</span></p></div>
+        <div class="buttons">
+            <button class="upperbuttons"><a href="index.html">Home</a></button>
+            <button class="upperbuttons"><a href="aboutus.html">About Us</a></button>
+            <button onmouseover="ddlist.classList.toggle('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="upperbuttons ddmenu"><a href="services.html">Services</a></button>
+            <div class="ddlist">
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbuttons"><a href="business.html">Business Assocations</a></button>
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbuttons"><a href="courses.html">Courses</a></button>
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbuttons"><a href="consultancy.html">Investment Consultancy</a></button>
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbuttons"><a href="charity.html">John Lee Foundation</a></button>
+            </div>
+            <button class="upperbuttons"><a href="references.html">References</a></button>
+            <button class="upperbuttons"><a href="news.html">News</a></button>
+        </div>
+
+        <div class="mobilebutton">
+            <button class="mddbutton mddmenu"><img src="symbols/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+            <div class="mddlist">
+                <button class="mddbutton"><a href="index.html">Home</a></button>
+                <button class="mddbutton"><a href="aboutus.html">About Us</a></button>
+                <button class="mddbutton"><a href="services.html">Services</a></button>
+                <button class="mddbutton"><a href="references.html">References</a></button>
+                <button class="mddbutton"><a href="news.html">News</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="img/2022-08-09_00-34-22.png" alt="">
+        <p class="hero-quote">Choose the best thing for you and benefit from our services.</p>
+    </div>
+
+    <hr>
+
+    <div class="services">
+        <div class="companyservices">
+            <img src="img/pexels-media-1181487-1660339555190.jpeg" alt="">
+            <h2><a href="#">Business Assocations</a></h2>
+        </div>
+        <div class="companyservices">
+            <img src="img/pexels-media-1181395-1660339540014.jpeg" alt="">
+            <h2><a href="#">Our Courses</a></h2>
+        </div>
+        <div class="companyservices">
+            <img src="img/pexels-media-590041-1660339503156.jpeg" alt="">
+            <h2><a href="#">Investmen Consultancy</a></h2>
+        </div>
+        <div class="companyservices">
+            <img src="img/pexels-media-6646918-1660339524141.jpeg" alt="">
+            <h2><a href="#">John Lee Foundation</a></h2>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>This Website Is Coded By Necdet Arda Etiman In 2022</p>
+        </div>
+    </footer>
+
+
+    <script>
+        let ddmenu = document.querySelector(".ddmenu");
+        let ddlist = document.querySelector(".ddlist");
+        let mddmenu = document.querySelector(".mddmenu");
+        let mddlist = document.querySelector(".mddlist");
+
+        ddmenu.addEventListener("click", () => {
+            ddlist.classList.toggle("ddlistopening");
+        });
+
+        mddmenu.addEventListener("click", () =>{
+            mddlist.classList.toggle("mddlistopening");
+        });
+    </script>
+
+</body>
+</html>

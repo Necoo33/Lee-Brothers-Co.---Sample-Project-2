@@ -1,0 +1,27 @@
+.services{
+    display: flex;
+    place-content: space-between;
+    flex-direction: column;
+}
+
+.companyservices{
+    margin: 5vh 20%;
+}
+
+.companyservices > *{
+    text-align: center;
+}
+
+.companyservices img{
+    width: 40vw;
+    margin: 5vh 10vw;
+}
+
+.companyservices h2:hover{
+    transform: scale(1.1);
+}
+
+.companyservices h2 a{
+    text-decoration: none;
+    color: #252525;
+}
