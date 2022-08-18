@@ -121,11 +121,12 @@ body{
 
 .mddmenu{
     margin: 0vh 0vw;
+    transform: scale(1.8, 1);
 }
 
 .mddbutton{
     position: relative;
-    width: 10vw;
+    /*width: 10vw;*/
     display: block;
     margin: 1vh 0;
 }
