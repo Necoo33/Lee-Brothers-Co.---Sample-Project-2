@@ -11,7 +11,7 @@ body{
     place-content: space-between;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(to left, #3939bd, #2424c7);
+    background-color: #194782;
 }
 
 .phone-mail{
@@ -25,11 +25,15 @@ body{
 .phone, .mail{
     display: flex;
     align-items: center;
-    margin: 0.2em;
+    margin: 0.5em;
 }
 
-.phone, .mail > img{
-    margin: 0.2em;
+.phone > img{
+    margin: 0.5em;
+}
+
+.mail > img{
+    margin: 0.5em;
 }
 
 .smicon-contactform{
@@ -60,6 +64,7 @@ body{
 }
 
 .contactbutton:hover{
+    background-color: #1C56A0;
     transform: scale(1.05);
 }
 
@@ -102,6 +107,7 @@ body{
     font-family: "Poppins";
     font-size: 1rem;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 .upperbuttons a{
@@ -121,13 +127,15 @@ body{
 
 .mddmenu{
     margin: 0vh 0vw;
+    transform: scale(1.8, 1);
 }
 
 .mddbutton{
     position: relative;
-    width: 10vw;
+    /*width: 10vw;*/
     display: block;
     margin: 1vh 0;
+    align-self: center;
 }
 
 .ddbuttons > a{
@@ -158,7 +166,7 @@ body{
     transform-origin: top;
     transition: 0.3s;
     background-color: white;
-    width: 5em;
+    width: 10em;
 }
 
 .ddlistopening{
@@ -275,7 +283,7 @@ input[type*="submit"]{
 }
 
 footer{
-    background-image: linear-gradient(to left, #3939bd, #2424c7);
+    background-color: #194782;
     text-align: center;
     padding: 2vh 0;
 }
@@ -450,8 +458,26 @@ footer div p{
         font-size: 0.9rem;
     }
 
+    .state{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .state img{
+        max-width: 45vw;
+        margin: 0 auto;
+    }
+
+    .state:nth-of-type(2){
+        flex-direction: column;
+    }
+    
+    .state:last-of-type{
+        flex-direction: column;
+    }
+
     .quotes{
-        font-size: 0.5rem;
+        text-align: center;
     }
     
     .references h2{
@@ -498,10 +524,6 @@ footer div p{
     .state img{
         max-width: 45%;
     }
-
-    .quotes{
-        font-size: 0.45rem;
-    }
 }
 
 @media screen and (max-width: 430px){
@@ -513,10 +535,6 @@ footer div p{
     .contactbutton{
         padding: 0.15em;
         font-size: 0.3rem;
-    }
-
-    .quotes{
-        font-size: 0.35rem;
     }
 
     .references h2{
@@ -548,10 +566,6 @@ footer div p{
         font-size: 0.55em;
     }
 
-    .quotes{
-        font-size: 0.35rem;
-    }
-
     .references h2{
         font-size: 0.9rem;
     }
@@ -578,9 +592,5 @@ footer div p{
     .hero-quote{
         top: 13%;
         font-size: 0.45em;
-    }
-
-    .quotes{
-        font-size: 0.25rem;
     }
 }
