@@ -206,6 +206,10 @@ input[type*="submit"]{
     font-style: italic;
 }
 
+hr{
+    display: none;
+}
+
 .company-states{
     margin-top: 15vh;
     margin-right: 20%;
